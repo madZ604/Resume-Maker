@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Login
+{% endblock %}
+
+{% block main %}
+    <h1 style="color:#0e2d5c;">Resume Maker</h1> <br>
+    <form action="/login" method="post">
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="username" placeholder="Username" type="text">
+        </div>
+        <br>
+        <div class="form-group">
+            <input class="form-control mx-auto w-auto" name="password" placeholder="Password" type="password">
+        </div>
+        <br>
+        <button class="btn btn-primary" type="submit">Login</button>
+    </form>
+    <br>
+    <div>
+        <p>Don't have an account? <br>
+        <a href="/register">Register Here!</a></p>
+    </div>
+{% endblock %}

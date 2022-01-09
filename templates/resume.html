@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Resume
+{% endblock %}
+
+{% block main %}
+
+<h1>Resume of {{ val.name}} </h1>
+<div>
+    <div style="text-align:center;" class="d-flex flex-column bd-highlight mb-3">
+      <div class="p-2 bd-highlight"><span><strong>Email ID:</strong> </span> <span>{{val.email}}</span></div>
+      <div class="p-2 bd-highlight"><strong>Contact Number:</strong> {{val.number}}</div>
+      <div class="p-2 bd-highlight"><strong>LinkedIn:</strong> {{val.link}}</div>
+    </div>
+
+    <h1>Education:</h1>
+    <div class="d-flex flex-column bd-highlight mb-3">
+      <div class="p-2 bd-highlight"><strong>University:</strong> {{val.uni}}</div>
+      <div class="p-2 bd-highlight"><strong>Major:</strong> {{val.major}}</div>
+      <div class="p-2 bd-highlight"><strong>Degree:</strong> {{val.deg}}</div>
+      <div class="p-2 bd-highlight"><strong>Duration:</strong> {{val.dur}}</div>
+    </div>
+
+    <h1>Experience:</h1>
+    <div class="d-flex flex-column bd-highlight mb-3">
+      <div class="p-2 bd-highlight">{{val['exp']}}</div>
+    </div>
+
+    <h1>Skills:</h1>
+    <div class="d-flex flex-column bd-highlight mb-3">
+      <div class="p-2 bd-highlight">{{val.skills}}</div>
+    </div>
+</div>
+{% endblock %}

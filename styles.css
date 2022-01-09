@@ -1,0 +1,26 @@
+nav .navbar-brand
+{
+    /* size for brand */
+    font-size: xx-large;
+}
+
+/* Colors for brand */
+nav .navbar-brand .blue
+{
+    color: #537fbe;
+}
+
+.navbar-brand{
+    float:none;
+    padding:0 0 0 20%;
+}
+
+main .form-control
+{
+    /* Center form controls */
+    display: inline-block;
+    padding:10% 10%;
+    margin:auto;
+    width:auto!important;
+}
+
